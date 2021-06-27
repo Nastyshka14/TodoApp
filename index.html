@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-App</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="index.js" defer type="module"></script>
+
+</head>
+
+<body class="p-3 mb-2 bg-secondary text-white">
+
+    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add todo</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="add-todo mb-3">
+                            <label for="message-text" class="form-label">Title</label>
+                            <input class="add-todo-title form-control" id="message-text"></input>
+                        </div>
+                        <div class="add-todo mb-3">
+                            <label for="message-text" class="form-label">Description</label>
+                            <input class="add-todo-subtitle form-control" id="message-text"></input>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="d-flex justify-content-center pt-5 mb-3">Todo list</h1>
+        <div class="d-flex justify-content-center mt-10">
+            <button type="button" class="btn btn-add btn-danger mb-5 ms-5">Add todo</button>
+            <button type="button" class="btn btn-remove-all btn-danger mb-5 ms-5">Remove all</button>
+            <button type="button" class="btn btn-remove-last btn-danger mb-5 ms-5">Remove last</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="d-flex justify-content-center">
+            <ul class="list-group d-flex justify-content-center"></ul>
+        </div>
+    </main>
+
+</body>
+
+</html>
