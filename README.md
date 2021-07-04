@@ -1,3 +1,1 @@
-# TodoApp
-
-https://nastyshka14.github.io/TodoApp/
+# 30june
